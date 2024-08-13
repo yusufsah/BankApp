@@ -17,6 +17,11 @@ namespace Entity
 		
 		public string BankBranch { get; set; }
 
+		// üst sınıf
+		public int AppUserID { get; set; }
+
+		public AppUser AppUser { get; set; }
+
 
 	}
 }

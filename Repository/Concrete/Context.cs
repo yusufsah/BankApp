@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Repository.Concrete
 {
-	public class Context : IdentityDbContext
+	public class Context : IdentityDbContext<AppUser,AppRole,int>   //<> bunu migration oluştduktan sonra yaıyorsun unutma 
 	{
 		protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 		{
