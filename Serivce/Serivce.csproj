@@ -23,12 +23,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BankDto\BankDto.csproj" />
     <ProjectReference Include="..\Entity\Entity.csproj" />
     <ProjectReference Include="..\Repository\Repository.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ValidationRules\" />
+    <Folder Include="ValidationRules\AppRoleValidationRules\" />
+    <Folder Include="ValidationRules\CustomerAccountValidationRules\" />
+    <Folder Include="ValidationRules\CustomerAccountProcessValidationRulles\" />
   </ItemGroup>
 
 </Project>
