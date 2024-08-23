@@ -12,8 +12,8 @@ using Repository.Concrete;
 namespace Repository.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20240811093209_newtable")]
-    partial class newtable
+    [Migration("20240819053233_adfsassfsfas")]
+    partial class adfsassfsfas
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -72,6 +72,9 @@ namespace Repository.Migrations
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("ConfirmCode")
+                        .HasColumnType("int");
 
                     b.Property<string>("District")
                         .IsRequired()

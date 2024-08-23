@@ -21,6 +21,8 @@ namespace Entity
 
 		public string ImageUrl { get; set; }
 
+		public int ConfirmCode { get; set; }
+
 		// alt sınıf
 		public List<CustomerAccount> customerAccounts { get; set; }
 
