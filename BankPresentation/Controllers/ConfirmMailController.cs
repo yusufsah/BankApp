@@ -30,9 +30,9 @@ namespace BankPresentation.Controllers
             var user = await _userManager.FindByEmailAsync(confirmMailViewModel.Mail);
             if (user.ConfirmCode == confirmMailViewModel.ConfirmCode)
             {
-               // user.EmailConfirmed = true;       /// bu 2 satır mail ile giriş yaptığımıda   mail confirim çalıştırıyor 
-               // await _userManager.UpdateAsync(user);
-                return RedirectToAction("Index","MyProfile");
+               user.EmailConfirmed = true;       /// bu 2 satır mail ile giriş yaptığımıda   mail confirim çalıştırıyor 
+               await _userManager.UpdateAsync(user);
+                return RedirectToAction("Index", "Login");
             }
             return View();
         }
