@@ -17,6 +17,17 @@ namespace Entity
 		public DateTime ProcessDate { get; set; }
 
 
+		//
+		public int? SenderID { get; set; }
+
+		public int? ReveiverID { get; set; }
+
+		// alt sınıf
+		public CustomerAccount SenderCustomer { get; set; }
+
+		public CustomerAccount ReveiverCustomer {  get; set; }
+
+
 
     }
 }
