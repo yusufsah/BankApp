@@ -59,6 +59,19 @@
                         </ul>
                     </li>
                     <li>
+                        <a><i class="fa fa-car"></i> para transferleri <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                            <li><a asp-controller="SendMoney" asp-action="Index" asp-route-Currency="TL">TL transfer</a></li>
+                            <li><a asp-controller="SendMoney" asp-action="Index" asp-route-Currency="Dolar"> Dolar Transfer</a></li>
+                            <li><a asp-controller="SendMoney" asp-action="Index" asp-route-Currency="Euro"> Euro Transfer</a></li>
+                            <li><a asp-controller="SendMoney" asp-action="Index" asp-route-Currency="Other">Diğer Transferler</a></li>
+                           
+
+                        </ul>
+                    </li>
+
+
+                    <li>
                         <a><i class="fa fa-table"></i> Ödemeler <span class="fa fa-chevron-down"></span></a>
                         <ul class="nav child_menu">
                             <li><a href="tables.html">Futura Ödemeleri</a></li>

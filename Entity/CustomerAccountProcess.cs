@@ -27,6 +27,8 @@ namespace Entity
 
 		public CustomerAccount ReveiverCustomer {  get; set; }
 
+		public string Description { get; set; }
+
 
 
     }

@@ -21,7 +21,6 @@
 
   <ItemGroup>
     <Folder Include="Dtos\AppRoleDtos\" />
-    <Folder Include="Dtos\CustomerAccountProcessDtos\" />
     <Folder Include="Dtos\CustomerAccountDtos\" />
   </ItemGroup>
 

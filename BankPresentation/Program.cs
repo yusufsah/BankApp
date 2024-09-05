@@ -1,5 +1,9 @@
 using Entity;
+using Repository;
+using Repository.Abstract;
 using Repository.Concrete;
+using Serivce;
+using Serivce.Abrstract;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +13,10 @@ builder.Services.AddDbContext<Context>(); // bunu ekliyoruz yoksa açýlmaz  unutm
 builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Context>();
 	     // bunu ekliyoruz yoksa açýlmaz  unutma
 
+
+builder.Services.AddScoped<ICustomerAccountProcessDal,EfCustomerAccountProcess>(); // repository
+
+builder.Services.AddScoped<ICustomerAccountProcessService, CustomerAccountProcessManager>(); // service
 
 var app = builder.Build();
 
