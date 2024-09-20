@@ -9,5 +9,7 @@ namespace Serivce.Abrstract
 {
 	public interface ICustomerAccountService : IGenericService<CustomerAccount>
 	{
-	}
+
+        List<CustomerAccount> TGetCustomerAccountinformation(int id);
+    }
 }

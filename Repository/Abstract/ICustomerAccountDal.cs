@@ -9,5 +9,9 @@ namespace Repository.Abstract
 {
 	public interface ICustomerAccountDal:IGenericdal<CustomerAccount>
 	{
+		// giriş yapan kullanının hesap bilgilerini almak için 
+
+		List<CustomerAccount> GetCustomerAccountinformation(int id);
+
 	}
 }

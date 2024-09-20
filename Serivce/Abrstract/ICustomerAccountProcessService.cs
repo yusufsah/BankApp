@@ -9,5 +9,7 @@ namespace Serivce.Abrstract
 {
 	public interface ICustomerAccountProcessService : IGenericService<CustomerAccountProcess>
 	{
-	}
+
+        List<CustomerAccountProcess> TMyLastProces(int id);
+    }
 }

@@ -18,7 +18,9 @@ namespace Serivce
 			_customerAccountDal = customerAccountDal;
 		}
 
-		public void TDelete(CustomerAccount t)
+      
+
+        public void TDelete(CustomerAccount t)
 		{
 			_customerAccountDal.Delete(t);
 		}
@@ -28,7 +30,12 @@ namespace Serivce
 		  return _customerAccountDal.GetByID(id);
 		}
 
-		public List<CustomerAccount> TGetList()
+        public List<CustomerAccount> TGetCustomerAccountinformation(int id)
+        {
+			return _customerAccountDal.GetCustomerAccountinformation(id);
+        }
+
+        public List<CustomerAccount> TGetList()
 		{
 			return _customerAccountDal.GetList();
 		}

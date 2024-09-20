@@ -15,8 +15,10 @@ builder.Services.AddIdentity<AppUser, AppRole>().AddEntityFrameworkStores<Contex
 
 
 builder.Services.AddScoped<ICustomerAccountProcessDal,EfCustomerAccountProcess>(); // repository
+builder.Services.AddScoped<ICustomerAccountDal,EfCustomerAccount>();
 
 builder.Services.AddScoped<ICustomerAccountProcessService, CustomerAccountProcessManager>(); // service
+builder.Services.AddScoped<ICustomerAccountService,CustomerAccountManager>();
 
 var app = builder.Build();
 

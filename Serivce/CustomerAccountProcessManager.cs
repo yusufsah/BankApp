@@ -39,9 +39,20 @@ namespace Serivce
 			_customerAccountProcessDal.Insert(t);
 		}
 
-		public void TUpdate(CustomerAccountProcess t)
+
+        // BU AYRI OLUŞTURDUM DEĞİERLERİNDEN SON İŞLEMLERİ GETİREBİLEMEK İÇİN 
+        public List<CustomerAccountProcess> TMyLastProces(int id)
+        {
+            return _customerAccountProcessDal.MyLastProces(id);
+        }
+
+        public void TUpdate(CustomerAccountProcess t)
 		{
 			_customerAccountProcessDal.Update(t);
 		}
-	}
+
+
+		
+       
+    }
 }

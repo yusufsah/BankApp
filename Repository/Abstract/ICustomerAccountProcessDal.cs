@@ -9,7 +9,9 @@ namespace Repository.Abstract
 {
 	public interface ICustomerAccountProcessDal: IGenericdal<CustomerAccountProcess>
 	{
+		// bu sadece bunun için özel yazılan bir kod 
 
+		List<CustomerAccountProcess> MyLastProces(int id);
 
 	}
 }
